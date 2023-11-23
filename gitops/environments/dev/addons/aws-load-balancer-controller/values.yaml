@@ -1,2 +1,2 @@
 # Helm chart values
-replicaCount: 5
+# replicaCount: 5
