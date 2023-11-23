@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: book-ui
+spec:
+  selector:
+    matchLabels:
+      app: book-ui
+  template:
+    metadata:
+      labels:
+        app: book-ui
+    spec:
+      containers:
+      #- image: nginx
+      - image: gcr.io/heptio-images/ks-book-demo:0.2
+        name: book-ui
+        ports:
+        - name: http
+          containerPort: 80
