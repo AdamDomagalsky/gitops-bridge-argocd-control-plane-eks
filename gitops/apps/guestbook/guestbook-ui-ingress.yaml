@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: guestbook-ui
 spec:
-  ingressClassName: nginx
+  ingressClassName: alb
   rules:
     - http:
         paths:
