@@ -84,12 +84,12 @@ variable "addons" {
 variable "gitops_addons_org" {
   description = "Git repository org/user contains for addons"
   type        = string
-  default     = "https://github.com/gitops-bridge-dev"
+  default     = "https://github.com/AdamDomagalsky"
 }
 variable "gitops_addons_repo" {
   description = "Git repository contains for addons"
   type        = string
-  default     = "kubecon-2023-na-argocon"
+  default     = "gitops-bridge-argocd-control-plane-eks"
 }
 variable "gitops_addons_revision" {
   description = "Git repository revision/branch/ref for addons"
@@ -110,12 +110,12 @@ variable "gitops_addons_path" {
 variable "gitops_workload_org" {
   description = "Git repository org/user contains for workload"
   type        = string
-  default     = "https://github.com/gitops-bridge-dev"
+  default     = "https://github.com/AdamDomagalsky"
 }
 variable "gitops_workload_repo" {
   description = "Git repository contains for workload"
   type        = string
-  default     = "kubecon-2023-na-argocon"
+  default     = "gitops-bridge-argocd-control-plane-eks"
 }
 variable "gitops_workload_revision" {
   description = "Git repository revision/branch/ref for workload"
